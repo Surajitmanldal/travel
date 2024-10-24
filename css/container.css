@@ -1,0 +1,171 @@
+.sub-title{
+    width: 2.2vw;
+    color: #333;
+    font-weight: 600;
+    margin: 50px 10px 20px;
+}
+.container{
+    margin: 0 5%;
+    /* background-image: linear-gradient(to bottom,rgb(168, 129, 129),rgb(223, 180, 180)); */
+}
+.exclusives{
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+   grid-gap: 30px;
+}
+.exclusives div img{
+    width: 100%;
+    border-radius: 10px;
+   
+}
+.exclusives div{
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   
+}
+.trending-places div img:hover,.stories div:hover,.exclusives div:hover{
+    transform: scale(1.1);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+.exclusives div span{
+    color: white;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    text-align: center;
+}
+/* ------treding Places ---*/
+.trending-places{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap: 50px;
+    margin-bottom: 30px;
+}
+.trending-places div img{
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.trending-places div h3{
+    margin-top: 10px;
+    font-weight: 500;
+    text-align: center;
+}
+/* ------cta section---- */
+.cta{
+  margin: 60px 0;
+  background-image: linear-gradient(to right,#3f2321,transparent),url('../images/banner-2.png');
+  background-size: cover;
+  background-position: center;
+  padding: 5%;
+  border-radius: 8px;
+  color: #ffff;
+}
+.cta h3{
+    font-size: 4vw;
+    line-height: 5.3vw;
+    font-weight: 500;
+}
+.cta p{
+    font-size: 18px;
+    margin: 10px 0;
+}
+.cta .cta-btn{
+    background-color: #ff5361;
+    color: #ffff;
+    padding: 12px 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+.cta-btn:hover{
+    background-color: #bc4650;
+}
+
+/* Travellers Stories */
+.stories{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap: 50px;
+    margin-bottom: 30px;
+}
+.stories div img{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+.stories div{
+    position: relative;
+    /* text-align: center; */
+    transition: 0.5s ease;
+}
+.stories div p{
+    position: absolute;
+    left: 50%;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: rgb(255, 255, 254);
+    font-size: 20px;
+    font-weight: 700;
+}
+.start-btn{
+    text-decoration: none;
+    width: 80%;
+    max-width: 350px;
+    margin: 50px auto;
+    padding: 15px;
+    color: #ffff;
+    background-color: #ff5361;
+    display: block;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: 550;
+    transition: 0.3s ease;
+}
+.start-btn:hover{
+    background-color: #ee626e;
+}
+/*------about msg -----*/
+.about-msg{
+  text-align: center;
+  margin: 80px 0;
+  color: #333;
+  font-size: 17px;
+}
+.about-msg h2{
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 550;
+}
+/* ----- Fotter */
+
+.footer{
+    margin: 80px 0 10px;
+    text-align: center;
+}
+.footer a{
+    text-decoration: none;
+    color: #999;
+    margin: 0 10px;
+    font-size: 22px;
+}
+.footer hr{
+    width: 100%;
+    color: #999;
+    height: 1px;
+    /* border: none; */
+    margin: 20px 0;
+}
+.footer p{
+    padding-bottom: 15px;
+    font-weight: 500;
+}
